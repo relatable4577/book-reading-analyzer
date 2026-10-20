@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "volume": {
+    "title": "",
+    "editor_or_compiler": "",
+    "edition": "",
+    "language": "",
+    "source": ""
+  },
+  "classification": "anthology",
+  "works": [
+    {
+      "order": 1,
+      "work_id": "replace-with-work-slug",
+      "title": "",
+      "author": "",
+      "type": "short_story",
+      "coverage_status": "not_started",
+      "index_file": "works/01-replace-with-work-slug/index.html",
+      "expected_units": null,
+      "received_units": [],
+      "analyzed_units": [],
+      "gaps": []
+    }
+  ],
+  "sources": []
+}

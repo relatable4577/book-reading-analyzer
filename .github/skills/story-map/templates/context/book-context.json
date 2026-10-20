@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "work_id": "replace-with-stable-work-slug",
+  "work": {
+    "title": "",
+    "author": "",
+    "edition": "",
+    "language": "",
+    "form": "novel",
+    "series": ""
+  },
+  "classification": {
+    "genres": [],
+    "confidence": "unknown"
+  },
+  "coverage": {
+    "expected_units": null,
+    "received_units": [],
+    "analyzed_units": [],
+    "gaps": []
+  },
+  "characters": [],
+  "relationships": [],
+  "events": [],
+  "themes_and_motifs": [],
+  "open_threads": [],
+  "sources": []
+}

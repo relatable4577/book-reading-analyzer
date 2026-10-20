@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A spoiler-free book overview and chapter directory for [[BOOK_TITLE]].">
+  <meta name="theme-color" content="#f5f3ef">
+  <title>[[BOOK_TITLE]] — Story Map</title>
+  <link rel="stylesheet" href="assets/story-map.css">
+  <script src="assets/theme.js" defer></script>
+</head>
+<body>
+  <header class="topbar" id="top">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span> Story Map</a>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span id="theme-label">Dark theme</span>
+    </button>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">A reader's companion</p>
+      <h1>[[BOOK_TITLE]]</h1>
+      <p class="author">[[AUTHOR]]</p>
+      <div class="meta-list">
+        <span class="meta-chip"><strong>Edition</strong> [[EDITION]]</span>
+        <span class="meta-chip"><strong>Coverage</strong> [[COVERAGE_SUMMARY]]</span>
+      </div>
+    </section>
+
+    <section class="panel overview" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <p class="eyebrow">At a glance</p>
+        <h2 id="overview-title">Book overview</h2>
+      </div>
+      <dl class="stats">
+        <div class="stat"><dt>Expected [[UNIT_COUNT_LABEL]]</dt><dd>[[EXPECTED_UNIT_COUNT]]</dd></div>
+        <div class="stat"><dt>[[UNITS_ANALYZED_LABEL]] analyzed</dt><dd>[[ANALYZED_UNITS]]</dd></div>
+        <div class="stat"><dt>Length / format</dt><dd>[[BOOK_LENGTH_AND_FORMAT]]</dd></div>
+      </dl>
+      <p class="coverage-note">[[COVERAGE_NOTES]]</p>
+    </section>
+
+    <section class="panel plot-summary" aria-labelledby="plot-summary-title">
+      <div class="section-heading">
+        <p class="eyebrow">Before you begin</p>
+        <h2 id="plot-summary-title">The story, without spoilers</h2>
+      </div>
+      <div class="prose">[[SPOILER_FREE_PLOT_SUMMARY]]</div>
+      <div class="source-note">
+        <strong>Summary context</strong>
+        [[PLOT_SUMMARY_SOURCES]]
+      </div>
+    </section>
+
+    <section class="panel content-advisory" aria-labelledby="content-advisory-title">
+      <div class="section-heading">
+        <p class="eyebrow">Reader information</p>
+        <h2 id="content-advisory-title">Age and content advisory</h2>
+      </div>
+      <p class="content-advisory-note">[[AGE_AND_CONTENT_ADVISORY]]</p>
+    </section>
+
+    <section class="chapter-directory" aria-labelledby="chapters-title">
+      <div class="section-heading">
+        <p class="eyebrow">Explore the book</p>
+        <h2 id="chapters-title">[[UNIT_LIST_HEADING]]</h2>
+        <p class="muted">Choose an item to open its dedicated analysis page.</p>
+      </div>
+      <ol class="chapter-list">
+        [[CHAPTER_LIST_ITEMS]]
+      </ol>
+    </section>
+
+    <section class="panel book-analysis-callout">
+      <div>
+        <p class="eyebrow">Explore in depth</p>
+        <h2>Complete-work analysis</h2>
+        <p class="muted">Structure, characters, themes, and resolution. Contains spoilers.</p>
+      </div>
+      <a class="button-link" href="[[ANALYSIS_PAGE_FILE]]">[[ANALYSIS_PAGE_LABEL]] <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a href="#top">Back to top ↑</a></footer>
+
+  <template id="chapter-list-item-template">
+    <li class="chapter-list-item">
+      <a href="[[CHAPTER_FILE]]">
+        <span class="chapter-index">[[UNIT_DISPLAY_LABEL]]</span>
+        <strong>[[UNIT_TITLE]]</strong>
+        <span class="chapter-pages">[[UNIT_PAGE_RANGE_OR_LENGTH]]</span>
+        <span class="chapter-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+  </template>
+</body>
+</html>

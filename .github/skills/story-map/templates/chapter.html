@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Spoiler-safe analysis of chapter [[CHAPTER_NUMBER]] of [[BOOK_TITLE]].">
+  <meta name="theme-color" content="#f5f3ef">
+  <title>Chapter [[CHAPTER_NUMBER]]: [[CHAPTER_TITLE]] — [[BOOK_TITLE]]</title>
+  <link rel="stylesheet" href="assets/story-map.css">
+  <script src="assets/theme.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span> Story Map</a>
+    <nav class="top-links" aria-label="Book navigation">
+      <a href="index.html">Book home</a>
+      [[WHOLE_WORK_ANALYSIS_LINK]]
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span id="theme-label">Dark theme</span>
+    </button>
+  </header>
+
+  <main class="shell chapter-page">
+    <p class="breadcrumb"><a href="index.html">[[BOOK_TITLE]]</a> <span aria-hidden="true">/</span> Chapter [[CHAPTER_NUMBER]]</p>
+    <header class="page-heading">
+      <p class="eyebrow">Chapter [[CHAPTER_NUMBER]] of [[EXPECTED_CHAPTER_COUNT]]</p>
+      <h1>[[CHAPTER_TITLE]]</h1>
+      <p class="muted">[[CHAPTER_PAGE_RANGE_OR_LENGTH]]</p>
+      <p class="reading-boundary">This analysis uses this chapter and earlier chapters only; it avoids information from later chapters.</p>
+      <p class="content-advisory-note">[[CHAPTER_CONTENT_ADVISORY]]</p>
+    </header>
+
+    <article class="chapter-analysis">
+      <section class="analysis-card summary-card">
+        <h2>Chapter summary</h2>
+        [[CHAPTER_SUMMARY]]
+      </section>
+      <section class="analysis-card">
+        <h2>Characters and interactions</h2>
+        [[CHARACTERS_AND_INTERACTIONS]]
+      </section>
+      <section class="analysis-card">
+        <h2>Character development</h2>
+        [[CHARACTER_DEVELOPMENT]]
+      </section>
+      <section class="analysis-card">
+        <h2>Events, conflicts, and turning points</h2>
+        [[EVENTS_AND_CONFLICTS]]
+      </section>
+      <section class="analysis-card">
+        <h2>Connections to earlier chapters</h2>
+        [[EARLIER_CHAPTER_CONNECTIONS]]
+      </section>
+      <section class="analysis-card">
+        <h2>Setting and context</h2>
+        [[SETTING_AND_CONTEXT]]
+      </section>
+      <section class="analysis-card">
+        <h2>Cultural references and real-world context</h2>
+        [[CULTURAL_AND_REAL_WORLD_CONTEXT]]
+      </section>
+      <section class="analysis-card">
+        <h2>Tone and mood</h2>
+        [[TONE_AND_MOOD]]
+      </section>
+      <section class="analysis-card">
+        <h2>Symbols and motifs</h2>
+        [[SYMBOLS_AND_MOTIFS]]
+      </section>
+      <section class="analysis-card">
+        <h2>Narrative techniques, structure, and pacing</h2>
+        [[NARRATIVE_TECHNIQUES]]
+      </section>
+      <section class="analysis-card">
+        <h2>Ending and open threads</h2>
+        [[ENDING_AND_OPEN_THREADS]]
+      </section>
+      <section class="analysis-card">
+        <h2>Evidence and notes</h2>
+        [[CHAPTER_EVIDENCE_AND_NOTES]]
+      </section>
+      <section class="analysis-card">
+        <h2>Genre lens</h2>
+        [[GENRE_LENS_ANALYSIS]]
+      </section>
+      <section class="analysis-card">
+        <h2>Optional adaptation lens</h2>
+        [[CHAPTER_ADAPTATION_LENS]]
+      </section>
+    </article>
+
+    <nav class="chapter-pagination" aria-label="Chapter pagination">
+      [[PREVIOUS_CHAPTER_LINK]]
+      <a class="button-link button-secondary" href="index.html">All chapters</a>
+      [[NEXT_CHAPTER_LINK]]
+    </nav>
+  </main>
+
+  <footer class="site-footer"><a href="index.html">← Back to book overview</a></footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contents and separate story maps for [[VOLUME_TITLE]].">
+  <meta name="theme-color" content="#f5f3ef">
+  <title>[[VOLUME_TITLE]] — Collection Story Maps</title>
+  <link rel="stylesheet" href="assets/story-map.css">
+  <script src="assets/theme.js" defer></script>
+</head>
+<body>
+  <header class="topbar" id="top">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span> Story Maps</a>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span id="theme-label">Dark theme</span>
+    </button>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Collection contents</p>
+      <h1>[[VOLUME_TITLE]]</h1>
+      <p class="author">[[VOLUME_EDITOR_OR_COMPILER]]</p>
+      <div class="meta-list">
+        <span class="meta-chip"><strong>Edition</strong> [[VOLUME_EDITION]]</span>
+        <span class="meta-chip"><strong>Coverage</strong> [[VOLUME_COVERAGE]]</span>
+      </div>
+    </section>
+
+    <section class="panel overview" aria-labelledby="collection-overview">
+      <div class="section-heading">
+        <p class="eyebrow">About this volume</p>
+        <h2 id="collection-overview">Contents and coverage</h2>
+      </div>
+      <div class="prose">[[COLLECTION_DESCRIPTION_AND_COVERAGE]]</div>
+      <div class="source-note">
+        <strong>Volume metadata sources</strong>
+        [[VOLUME_SOURCES]]
+      </div>
+    </section>
+
+    <section class="chapter-directory" aria-labelledby="works-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Independent story maps</p>
+        <h2 id="works-heading">Included works</h2>
+        <p class="muted">Each work is analyzed separately. There is no combined plot analysis for this collection.</p>
+      </div>
+      <ol class="chapter-list">
+        [[WORK_LIST_ITEMS]]
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a href="#top">Back to top ↑</a></footer>
+
+  <template id="work-list-item-template">
+    <li class="chapter-list-item">
+      <a href="[[WORK_INDEX_FILE]]">
+        <span class="chapter-index">Work [[WORK_ORDER]] · [[WORK_TYPE]]</span>
+        <strong>[[WORK_TITLE]]</strong>
+        <span class="chapter-pages">[[WORK_AUTHOR_AND_COVERAGE]]</span>
+        <span class="chapter-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+  </template>
+</body>
+</html>
